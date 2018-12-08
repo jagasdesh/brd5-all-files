@@ -1,0 +1,145 @@
+create table temp_maker
+(
+CustomerID number(10),
+CustomerCode varchar(30) primary key,
+costumerName varchar(30),
+CustomerAddress1 varchar(100),                                    
+CostomerAddress2 varchar(100),
+CustomerPinCode number(6),
+Emailaddress varchar(100),
+ContactNumber number(20),
+PrimaryContactPerson varchar(100),
+RecordStatus varchar(1),
+ActiveInactivFlag varchar(1),
+CreateDate date,
+CreatedBy varchar(30),
+ModifiedDate date,
+ModifiedBy varchar(30),
+AuthorizedDate date,
+AuthorizedBy varchar(30)
+);
+select *from temp_maker;
+select *from customermaster;
+drop table customermaster;
+
+truncate table customermaster;
+commit;
+
+create table Verify_details
+(
+username varchar(30),
+password varchar(20),
+type varchar(1)
+);
+insert into Verify_details values('amar','reddy','m');
+insert into Verify_details values('sai','chand','c');
+
+
+drop table TEMP_MAKER;
+commit;
+select *from TEMP_MAKER;
+truncate table TEMP_MAKER;
+desc temp_maker;
+select *from verify_details;
+
+truncate table costumermaster6;
+select *from costumermaster6;
+select count(*) from Verify_details where username='sai' and password='chand' and type='c';
+
+
+
+create table insertdata
+(
+
+CustomerCode varchar(30) primary key ,
+costumerName varchar(30),
+CustomerAddress1 varchar(100),
+CostomerAddress2 varchar(100),
+CustomerPinCode number(6),
+Emailaddress varchar(100),
+ContactNumber number(20),
+PrimaryContactPerson varchar(100),
+ActiveInactivFlag varchar(1),
+CreateDate Timestamp,
+CreatedBy varchar(30),
+ModifiedDate Timestamp,
+ModifiedBy varchar(30)
+);
+drop table insertdata;
+select*from insertdata;
+
+create table insertdata
+(
+
+CustomerCode varchar(30) primary key ,
+costumerName varchar(30),
+CustomerAddress1 varchar(100),
+CostomerAddress2 varchar(100),
+CustomerPinCode number(6),
+Emailaddress varchar(100),
+ContactNumber number(20),
+PrimaryContactPerson varchar(100),
+ActiveInactivFlag varchar(1)
+);
+
+select *from insertdata;
+truncate table insertdata;
+delete from insertdata where customercode='3411222';
+
+
+
+CREATE TABLE customer (
+  customerid number(11) NOT NULL ,
+  customercode number(10) primary key,
+  customername varchar(30),
+  customeraddress varchar(100),
+  customerpincode varchar(6),
+  customeremail varchar(100),
+  contactnumber varchar(20),
+  registrationdate Date,
+  createdby varchar(30),
+  modifieddate Date
+  );
+  
+  first_name varchar(45) DEFAULT NULL,
+  last_name varchar(45) DEFAULT NULL,
+  email varchar(45) DEFAULT NULL
+);
+    delete  from customer;
+    INSERT INTO customer VALUES (1,'David','Adams','david@demo.com');
+	INSERT INTO customer VALUES (2,'John','Doe','john@demo.com');  
+    INSERT INTO customer VALUES	(3,'Ajay','Rao','ajay@demo.com');
+    INSERT INTO customer VALUES	(4,'Mary','Public','mary@demo.com');
+    INSERT INTO customer VALUES	(5,'Maxwell','Dixon','max@demo.com'); 
+    commit;
+    select * from customer;
+    select *from customer order by id;
+    
+     select * from  Verify_details;;
+
+drop table customer;
+CREATE TABLE customer (
+  id number(11) NOT NULL,
+  first_name varchar(45) DEFAULT NULL,
+  last_name varchar(45) DEFAULT NULL,
+  email varchar(45) DEFAULT NULL,
+  PRIMARY KEY (id)
+)
+CREATE TABLE user_login (
+  user_name varchar(45) DEFAULT NULL,
+  password varchar(100) DEFAULT NULL,
+  PRIMARY KEY (user_name)
+);
+    select *from user_login;
+    
+    
+    
+    select *from Verify_details;
+    
+    
+    select *from temp_maker;
+    
+    truncate table customermaster;
+    select *from customermaster order by customerid;
+    
+    

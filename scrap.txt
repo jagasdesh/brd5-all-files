@@ -1,0 +1,58 @@
+	//		Part filename = request.getPart("upload");
+
+//		//String path = getServletContext().getRealPath("/WEB-INF/"+filename);
+//		String finalfile = Paths.get(filename.getSubmittedFileName()).getFileName().toString();
+//	    InputStream fileContent = filename.getInputStream();
+//	    System.out.println(fileContent);
+		// String file = "D:\\BRD-File Upload\\BRD-File Upload\\Test Cases\\File1.txt";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	request.setAttribute("customerid", updateid);
+			RequestDispatcher reqDiapatcher =request.getRequestDispatcher("updatedatadb");
+			reqDispatcher.forward(request, response);
+//			
+*///			request.setAttribute("updateresult", rs); // add to request
+//			request.getSession().setAttribute("updateresult", rs); // add to session
+//			this.getServletConfig().getServletContext().setAttribute("updateresult", rs);
+//		
+
+
+
+
+
+
+
+	/*	Date utilDate =new Date();
+		Timestamp time=new Timestamp(0);
+		java.sql.Date date = new java.sql.Date(utilDate.getTime());
+		System.out.println(date);*/
+
+
+
+
+
+
+
+brd2
+//			if(AuthorizedDate.equals("~")) {
+//				AuthorizedDate = "";
+//			}
+			// String teString = "insert into customermaster values('"+customerId+"','" +
+			// CustomerCode + "','" + CustomerName +"','"+CustomerAddress1+ "','"
+			// +CustomerAddress2+"','" +CustomerPinCode +"','"+Emailaddress
+			// +"','"+ContactNumber+ "','" +PrimaryContactPerson+ "','" +RecordStatus+ "','"
+			// +ActiveInactiveFlag+ "','" +CreateDate+ "','" +CreatedBy+ "','"
+			// +ModifiedDate+ "','" +ModifiedBy+ "','"+AuthorizedDate+ "','"+AuthorizedBy+
+			// "')";
